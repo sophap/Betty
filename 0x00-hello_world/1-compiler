@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -c world.c
+gcc -c world.c
