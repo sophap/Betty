@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c world.c
+gcc -o world.o world.c
