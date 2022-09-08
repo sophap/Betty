@@ -21,3 +21,4 @@ int main(void)
 	printf("Size of a float is: %lu.\n", (unsigned long)sizeof(f));
 
 	return (0);
+}
