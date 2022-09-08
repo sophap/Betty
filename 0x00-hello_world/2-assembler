@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S assemb.c
+gcc -S $CFILE
