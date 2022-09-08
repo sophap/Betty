@@ -2,11 +2,10 @@
 
 int main(void)
 {
-	char Mystr1[] = '"';
-	char Mystr2[] = "Programming is like building a multilingual puzzle";
 
-	puts(Mystr1);
-	puts(Mystr2);
+	char Mystr[] = "\"Programming is like building a multilingual puzzle";
+
+	puts(Mystr);
 
 	return (0);
 }
