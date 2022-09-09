@@ -4,7 +4,8 @@
 #include <time.h>
 
 /**
- * main - Prints the last digit of the generated number whether it is greater than 5, less than 6 and not 0 or it is 0
+ * main - Prints the last digit of the generated number
+ * whether it is greater than 5, less than 6 and not 0 or it is 0
  *
  * Return: Always 0 (Success)
  */
