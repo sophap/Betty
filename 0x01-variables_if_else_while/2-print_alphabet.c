@@ -11,8 +11,7 @@ int main(void)
 	int x = 'a';
 	while (x <= 'z')
 	{
-		int lower_x = tolower(x);
-		putchar(lower_x);
+		putchar(x);
 		x++;
 	}
 return (0);
