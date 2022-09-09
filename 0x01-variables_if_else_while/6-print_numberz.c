@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	int myNum = 0;
-	while (myNum <= 9)
+	int myNum = '0';
+	while (myNum <= '9')
 	{
 		putchar(myNum);
 		myNum++;
