@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (n3 = '2'; n3 <= '9'; n3++)
 			{
-				if ((n1 <n2) && (n2 < n3))
+				if ((n1 < n2) && (n2 < n3))
 				{
 					putchar(n1);
 					putchar(n2);
