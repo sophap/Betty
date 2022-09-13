@@ -9,7 +9,7 @@
  */
 int _abs(int i)
 {
-	return (i * (( i > 0) - (i < 0)));
+	return (i * ((i > 0) - (i < 0)));
 }
 
 
