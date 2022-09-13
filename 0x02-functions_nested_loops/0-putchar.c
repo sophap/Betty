@@ -5,7 +5,7 @@
  *
  * Returns: Always 0 (Success)
  */
-int main(void)
+int main()
 {
 	char letter[] = "_putchar";
 	int c = 0;
