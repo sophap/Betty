@@ -5,10 +5,10 @@
  *
  * Return: Always 0 (Success)
  */
-int _islower()
+int _islower(int c)
 {
 	int r;
-	r = _islower('H');
+	r = _islower(c);
 	_putchar(r + '0');
 	return (0);
 }
