@@ -11,8 +11,14 @@ int _islower(int c)
 {
 	int r;
 
-	r = _islower(c);
-	_putchar(r + '0');
+	if (_islower(c)
+	{
+	_putchar('1');
+	}
+	else 
+	{
+	_putchar('0');
+	}
 	_putchar('\n');
 	return (0);
 }
