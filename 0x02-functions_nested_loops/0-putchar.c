@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * main - Prints _putchar followed by a newline
+ * main - Entry point
  *
- * Returns: Always 0 (Success)
+ * description: Prints _putchar followed by a new line
+ *
+ * return: Always 0 (Success)
  */
-int main(void) {
-
+int main(void)
+{
 	char letter[] = "_putchar";
 	int c = 0;
 
