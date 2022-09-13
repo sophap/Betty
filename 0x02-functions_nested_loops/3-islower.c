@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int _islower(int c)
+int _islower()
 {
 	int r;
 	r = _islower('H');
