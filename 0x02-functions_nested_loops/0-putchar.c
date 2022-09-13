@@ -5,7 +5,7 @@
  *
  * Returns: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	char letter[] = "_putchar";
 	int c = 0;
@@ -17,5 +17,5 @@ int main()
 	}
 	_putchar('\n');
 
-return (0);
+return 0;
 }
