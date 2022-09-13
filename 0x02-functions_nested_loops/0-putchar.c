@@ -1,22 +1,19 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - Prints _putchar followed by newline and returns 0
  *
- * description: Prints _putchar followed by a new line
- *
- * main returns a value of 0
+ * Returns: Always 0 (Success)
  */
 int main(void)
-
 {
 	char letter[] = "_putchar";
 	int c = 0;
 
 	while (c < 8)
 	{
-		_putchar(letter[c]);
-		c++;
+	 	_putchar(letter(c));
+	 	c++;
 	}
 	_putchar('\n');
 
