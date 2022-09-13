@@ -9,7 +9,7 @@ int _putchar(char c);
 
 int main(void)
 {
-	char letter[] = "_putchar\n";
+	char letter[] = "_putchar";
 	int c = 0;
 
 	while (c < 8)
@@ -17,5 +17,7 @@ int main(void)
 		_putchar(letter[c]);
 		c++;
 	}
+	_putchar('\n');
+
 return (0);
 }
