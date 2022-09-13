@@ -15,11 +15,11 @@ int _islower(int c)
 	{
 	if (c == r)
 	{
-	return 1;
+	return (1);
 	}
 	else
 	{
-	return 0;
+	return (0);
 	}
 	}
 	_putchar('\n');
