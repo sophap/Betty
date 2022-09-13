@@ -9,15 +9,10 @@
  */
 int _islower(int c)
 {
+	int r;
 
-	if (_islower(c)
-	{
-	_putchar('1');
-	}
-	else 
-	{
-	_putchar('0');
-	}
+	r = _islower(c);
+	_putchar(r + '0');
 	_putchar('\n');
 	return (0);
 }
