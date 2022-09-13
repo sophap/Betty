@@ -3,9 +3,9 @@
 /**
  * main - Prints _putchar followed by newline and returns 0
  *
- * Returns: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
-int main(void) //main returns value 0
+int main(void) 
 {
 	char letter[] = "_putchar";
 	int c = 0;
