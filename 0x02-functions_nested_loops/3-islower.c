@@ -9,10 +9,19 @@
  */
 int _islower(int c)
 {
-	int r;
+	int r = 'a';
 
-	r = _islower(c);
-	_putchar(r + '0');
+	for (r = 'a'; r <= 'z'; r++)
+	{
+	if (c == r)
+	{
+	return 1;
+	}
+	else
+	{
+	return 0;
+	}
+	}
 	_putchar('\n');
 	return (0);
 }
