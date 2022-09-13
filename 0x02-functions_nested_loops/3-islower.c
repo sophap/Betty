@@ -7,33 +7,8 @@
  */
 int _islower(int c)
 {
-	int c1 = 'H';
-	int c2 = 'o';
-	int c3 = 108;
+	int c;
 
-	if (islower(c1))
-	{
-	_putchar('1');
-	} else {
-	_putchar('0');
-	}
-	if (islower(c2))
-	{
-	_putchar('1');
-	}
-	else
-	{
-	_putchar('0');
-	}
-	if (islower(c3))
-	{
-	_putchar('1');
-	}
-	else
-	{
-	_putchar('0');
-	}
-	_putchar('\n');
 
 	return (0);
 }
