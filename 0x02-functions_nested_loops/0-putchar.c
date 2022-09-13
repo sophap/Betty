@@ -12,7 +12,7 @@ int main(void)
 
 	while (c < 8)
 	{
-	 	_putchar(letter(c));
+	 	_putchar(letter[c]);
 	 	c++;
 	}
 	_putchar('\n');
