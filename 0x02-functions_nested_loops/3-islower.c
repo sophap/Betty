@@ -8,7 +8,6 @@
 int _islower(int c)
 {
 	int r;
-	c = {'o', 108, 'c'}
 
 	r = _islower(c);
 	_putchar(r + '0');
