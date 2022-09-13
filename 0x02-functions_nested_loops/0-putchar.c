@@ -8,6 +8,7 @@
  * main returns a value of 0
  */
 int main(void)
+
 {
 	char letter[] = "_putchar";
 	int c = 0;
