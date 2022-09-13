@@ -16,8 +16,8 @@ int _islower(int c)
 		if (r == c)
 	{
 		return (1);
-	}
-	}
-	_putchar('\n');
+	};
+	};
+	
 	return (0);
 }
