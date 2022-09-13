@@ -7,17 +7,17 @@
  */
 int _islower(int c)
 {
-	int r1 = 'H';
-	int r2 = 'o';
-	int r3 = 108;
+	int c1 = 'H';
+	int c2 = 'o';
+	int c3 = 108;
 
-	if (islower(r1))
+	if (islower(c1))
 	{
 	_putchar('1');
 	} else {
 	_putchar('0');
 	}
-	if (islower(r2))
+	if (islower(c2))
 	{
 	_putchar('1');
 	}
@@ -25,7 +25,7 @@ int _islower(int c)
 	{
 	_putchar('0');
 	}
-	if (islower(r3))
+	if (islower(c3))
 	{
 	_putchar('1');
 	}
