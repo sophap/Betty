@@ -16,3 +16,13 @@ int _islower(int c)
 	_putchar('\n');
 	return (0);
 }
+/**
+ * main - checks the code
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	_islower('o');
+	return (0);
+}
