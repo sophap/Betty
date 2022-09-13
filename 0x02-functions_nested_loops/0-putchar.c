@@ -5,7 +5,7 @@
  *
  * description: Prints _putchar followed by a new line
  *
- * return: Always 0 (Success)
+ * main returns a value of 0
  */
 int main(void)
 {
