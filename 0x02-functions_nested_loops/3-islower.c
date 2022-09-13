@@ -3,6 +3,8 @@
 /**
  * _islower - Entry point
  *
+ * @c: character to pass to _islower function
+ *
  * Return: Always 0 (Success)
  */
 int _islower(int c)
