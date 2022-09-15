@@ -14,7 +14,10 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-	_putchar(j);
+	else
+	{
+		_putchar(j);
+	}
 	_putchar('\n');
 
 return (0);
