@@ -16,22 +16,30 @@ int main(void)
 	for (i = 1; i <= n; i++)
 	{
 		if (i % 15 == 0)
-		printf("FizzBuzz ");
-
+		{
+			printf("FizzBuzz");
+			if (i < 100)
+				putchar(' ');
+		}
 		else if (i % 5 == 0)
 		{
-			if (i == 100)
-			{
-				printf("Buzz");
-				printf("\n");
-			}
+			printf("Buzz");
+			if (i < 100)
+				putchar(' ');
 		}
-
 		else if (i % 3 == 0)
-		printf("Fizz ");
-
+		{
+			printf("Fizz");
+			if (i < 100)
+				putchar(' ');
+		}
 		else
-		printf("%d ", i);
+		{
+			printf("%d", i);
+			if (i < 100)
+				putchar(' ');
+		}
 	}
+	printf("\n");
 return (0);
 }
