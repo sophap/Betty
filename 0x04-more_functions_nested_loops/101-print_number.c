@@ -19,7 +19,7 @@ void print_number(int n)
 
 	t = 1;
 	v = 1;
-	while (c)
+	while (v)
 	{
 		if (n / (t * 10) > 0)
 			t *= 10;
@@ -38,5 +38,5 @@ void print_number(int n)
 			_putchar((n / t % 10) + '0');
 			t /= 10;
 		}
-	}   
+	}
 }
