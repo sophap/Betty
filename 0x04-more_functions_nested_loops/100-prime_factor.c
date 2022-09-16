@@ -12,11 +12,12 @@ int main(void)
 {
 	int prime;
 	long int z;
+
 	z = 612852475143;
 
 	for (prime = 2; prime <= sqrt(z); prime++)
 	{
-		if(z % prime == 0)
+		if (z % prime == 0)
 		{
 			z = z / prime;
 			prime = 1;
