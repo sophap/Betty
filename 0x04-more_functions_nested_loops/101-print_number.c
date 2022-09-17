@@ -30,13 +30,13 @@ void print_number(int n)
 	{
 		if (t == 1)
 		{
-			_putchar(n % 10 + '0');
 			n = -1;
+			_putchar((n % 10) + '0');
 		}
 		else
 		{
-			_putchar((n / t % 10) + '0');
 			t /= 10;
+			_putchar((n / t % 10) + '0');
 		}
 	}
 }
