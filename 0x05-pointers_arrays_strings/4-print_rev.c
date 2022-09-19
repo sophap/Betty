@@ -13,8 +13,8 @@ void print_rev(char *s)
 	c = s;
 
 	while (*c == '\0')
-	{
-		printf("%s", *c);
+	 {
+		printf("%c", *c);
 		*c--;
 	}
 	putchar('\n');
