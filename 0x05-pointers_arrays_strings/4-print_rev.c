@@ -17,6 +17,7 @@ void print_rev(char *s)
 
 	c = s;
 
-	for (*c = l; *c > 0; *c--)
+	while (*c = '\0')
 		printf("%s\n", *c);
+		*c--;
 }
