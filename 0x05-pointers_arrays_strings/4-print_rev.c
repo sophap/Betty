@@ -12,7 +12,7 @@ void print_rev(char *s)
 
 	c = s;
 
-	while (*c = '\0')
+	while (*c == '\0')
 	{
 		printf("%s", *c);
 		*c--;
