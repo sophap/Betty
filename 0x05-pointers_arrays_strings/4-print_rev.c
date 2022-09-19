@@ -29,6 +29,6 @@ void print_rev(char *s)
 
 		bgn_ptr++;
 		end_ptr--;
-		printf("%s\n",s);
+		printf("%s\n", s);
 	}
 }
