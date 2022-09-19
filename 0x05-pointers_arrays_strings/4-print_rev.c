@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 /**
  * print_rev - print a string in reverse followed by a newline
