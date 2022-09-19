@@ -13,5 +13,5 @@ void _puts(char *str)
 	k = str;
 
 	while (*k != '\0')
-		printf("%c\n", *k++);
+		printf("%c", *k++);
 }
