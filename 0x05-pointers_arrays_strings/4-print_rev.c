@@ -10,26 +10,13 @@
 void print_rev(char *s)
 {
 	int l;
-	int i;
-	char c;
-	char *bgn_ptr;
-	char *end_ptr;
+
+	char *c;
 
 	l = strlen(s);
-	bgn_ptr = s;
-	end_ptr = s;
 
-	for (i = 0; i < l - 1; i++)
-		end_ptr++;
-	for (i = 0; i < l / 2; i++)
-	{
-		c = *end_ptr;
-		*end_ptr = *bgn_ptr;
-		*bgn_ptr = c;
+	c = s;
 
-		bgn_ptr++;
-		end_ptr--;
-
-		printf("%s\n", *bgn_ptr);
-	}
+	for (*c = l; *c > 0; *c--)
+		printf("%s\n", *c);
 }
