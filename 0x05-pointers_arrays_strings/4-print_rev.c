@@ -14,8 +14,7 @@ void print_rev(char *s)
 
 	while (*c == '\0')
 	 {
-		printf("%c", *c);
-		*c++;
+		printf("%c", *c--);
 	}
 	putchar('\n');
 }
