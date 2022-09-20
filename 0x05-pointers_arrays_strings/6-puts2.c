@@ -14,10 +14,10 @@ void puts2(char *str)
 	int i;
 	int l = strlen(str);
 
-	for (i = 0; *t[i] != '\0'; i++)
+	for (i = 0; i <= l / 2; i++)
 	{
-		if (i % 2 == 0)
-			printf("%c", *t[i]);
+		printf("%c", *t);
+		t += 2;
 	}
 	putchar('\n');
 }
