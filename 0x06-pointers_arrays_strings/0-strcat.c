@@ -11,12 +11,13 @@ char *_strcat(char *dest, char *src)
 {
 	char *str1;
 	char *str2;
+	int a;
+	int b;
 
-	str1 = &dest;
-	str2 = &src;
-
-	int a = 0;
-	int b = 0;
+	str1 = dest;
+	str2 = src;
+	a = 0;
+	b = 0;
 
 	while (dest[a] != '\0')
 	{
@@ -30,6 +31,6 @@ char *_strcat(char *dest, char *src)
 		str2++;
 		b++;
 	}
-	printf("%s/n", dest);
+	printf("%s", dest);
 return (0);
 }
