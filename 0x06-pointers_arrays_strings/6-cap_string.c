@@ -21,12 +21,12 @@ char *cap_string(char *str)
 			{
 				for (b = 0; b <= 12; b++)
 				{
-					if (wsp[b] == *(str + h - 1)
+					if (wsp[b] == *(str + h - 1))
 						*(str + h) -= 'a' - 'A';
 				}
 			}
 		}
 		h++;
 	}
-	return (str);
+return (str);
 }
