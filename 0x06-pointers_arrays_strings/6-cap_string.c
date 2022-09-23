@@ -11,26 +11,22 @@ char *cap_string(char *str)
 	int b;
 	char wsp[] = ".,;!?(){}\t\n\" ";
 
-	for (h = 0; str[h] != '\0'; h++)
+	while (*(str + h))
 	{
-		if (h == 0)
+		if (*(str + h) >= 'a' && *(str + h) <= 'z')
 		{
-			if (str[h] >= 'a' && str[h] <= 'z')
+			if (h == 0)
+				*(str + h) -= 'a' - 'A';
+			else
 			{
-				str[h] = str[h] - 32;
-			}
-		}
-		for (b = 0; wsp[b] != '\0'; b++)
-		{
-			if (str[h] == wsp[b])
-			{
-				++h;
-				if (str[h] >= 'a' && str[h] <= 'z')
+				for (b = 0; b <= 12; b++)
 				{
-					str[h] = str[h] - 32;
+					if (wsp[b] == *(str + h - 1)
+						*(str + h) -= 'a' - 'A';
 				}
 			}
 		}
+		h++;
 	}
 	return (str);
 }
