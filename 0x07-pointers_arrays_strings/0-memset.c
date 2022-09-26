@@ -4,6 +4,7 @@
  * @s: starting address of memory to be filled
  * @b: value to be filled
  * @n: number of lines to be filled starting from s
+ * Return: pointer to s
  */
 
 char *_memset(char *s, char b, unsigned int n)
