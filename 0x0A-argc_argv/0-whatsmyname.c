@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - accepts 2 arguments as input and prints out the name of the first argument
+ * main - accepts 2 arguments as input
+ * and prints out the name of the first argument
  * @argc: count of arguments
  * @argv: array of strings of argc
  * Return: Always 0
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int k;
 
