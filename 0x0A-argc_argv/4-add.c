@@ -3,30 +3,33 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/**i
+/**
  * main - adds up all the arguments excluding non-digits
  * @argc: number of arguments
- * @argv; array of arguments
+ * @argv: array of arguments
  * Return: Alway 0
  */
 int main(int argc, char *argv[])
 {
+	int u = 0;
 	int v = 0;
 	int sum = 0;
 
-	if (argc == 1)
+	for (u = 1; u < argc; u++)
 	{
-		printf("0\n");
+		for (v = 0; argv[u][v]; v++)
+		{
+			if (isdigit(argv[u][v]) == 0)
+			{
+				printf("Error\n");
+				return (0);
+			}
+		}
 	}
-	if (argv[v] >= 0)
+	for (u = 0; u < argc; u++)
 	{
-		sum += atoi(argv[v]);
-		printf("%d\n", sum);
+		sum += atoi(argv[u]);
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+	printf("%d\n", sum);
 	return (0);
 }
