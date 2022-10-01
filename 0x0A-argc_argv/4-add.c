@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -11,23 +12,21 @@
 int main(int argc, char *argv[])
 {
 	int v = 0;
-
-	char dig[] = "0123456789";
 	int sum = 0;
 
 	if (argc == 1)
 	{
-		printf("0");
+		printf("0\n");
 	}
-	if (argv[v] != dig[v])
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else
+	if (argv[v] >= 0)
 	{
 		sum += atoi(argv[v]);
 		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }
