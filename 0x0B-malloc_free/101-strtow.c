@@ -31,7 +31,7 @@ char **strtow(char *str)
 	m = _str_len(str);
 	if (m == 1)
 		printf("Failed\n");
-	ptr = malloc(m * sizeof(char));
+	ptr = malloc(m * sizeof(*ptr));
 	if (ptr == NULL)
 		return (NULL);
 	ptr[m - 1] = NULL;
@@ -43,7 +43,7 @@ char **strtow(char *str)
 			for (o = 1; str[n + o] != ' ' && str[n + o]; o++)
 				;
 			o++;
-			ptr[r] = malloc(o * sizeof(char));
+			ptr[r] = malloc(o * sizeof(**ptr));
 			o--;
 			if (ptr[r] == NULL)
 			{
