@@ -9,10 +9,19 @@
  */
 int _str_len(char *f)
 {
-	int m = 0;
+	int s, m = 0;
 
-	for (m = 0; f[m] != '\0'; m++)
-		;
+	for (s = 0; f[s]; s++)
+	{
+		if (f[s] == ' ')
+		{
+			if (f[s + 1] != ' ' && f[s + 1] != '\0')
+				m++;
+		}
+		else if (s == 0)
+			m++;
+	}
+	m++;
 	return (m);
 }
 
