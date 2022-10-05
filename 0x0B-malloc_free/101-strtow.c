@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -29,8 +30,8 @@ char **strtow(char *str)
 		return (NULL);
 	m = _str_len(str);
 	if (m == 1)
-		return (NULL);
-	ptr = malloc(m * sizeof(char *));
+		printf("Failed\n");
+	ptr = (char **)malloc(m * sizeof(char *));
 	if (ptr == NULL)
 		return (NULL);
 	ptr[m - 1] = NULL;
@@ -42,7 +43,7 @@ char **strtow(char *str)
 			for (o = 1; str[n + o] != ' ' && str[n + o]; o++)
 				;
 			o++;
-			ptr[r] = malloc(o * sizeof(char));
+			ptr[r] = (char *)malloc(o * sizeof(char));
 			o--;
 			if (ptr[r] == NULL)
 			{
