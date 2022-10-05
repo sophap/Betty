@@ -1,6 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+
+/**
+ * _str_len - counts the length of a string
+ * @f: string to be counted
+ * Return: length of string
+ */
+int _str_len(char *f)
+{
+	int m = 0;
+
+	for (m = 0; f[m] != '\0'; m++)
+		;
+	return (m);
+}
 
 /**
  * strtow - splits a string into words
@@ -10,13 +23,14 @@
 char **strtow(char *str)
 {
 	char **ptr;
-	int m, n, o, p, q, r = 0;
+	int n, o, p, q, m = 0, r = 0;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	for (m = 0; str[m] != '\0'; m++)
-		;
-	ptr = malloc(m * sizeof(*ptr));
+	m = _str_len(str);
+	if (m == 1)
+		return (NULL);
+	ptr = malloc(m * sizeof(char *));
 	if (ptr == NULL)
 		return (NULL);
 	ptr[m - 1] = NULL;
