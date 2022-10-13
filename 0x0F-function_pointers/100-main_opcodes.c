@@ -24,13 +24,9 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	ptr = (unsigned char *)main;
-	g = 0;
 
-	if (f > 0)
-	{
-		while (g < (f - 1))
-			printf("%02hhx ", ptr[g++]);
-		printf("%hhx\n", ptr[g]);
-	}
+	for (g = 0; g < f - 1; g++)
+		printf("%02hhx ", ptr[g]);
+	printf("%02hhx\n", ptr[g]);
 	return (0);
 }
