@@ -6,7 +6,7 @@
  * main - performs simple operations
  * @argc: argument count
  * @argv: argument vector
- * return: result
+ * Return: result
  */
 int main(int argc, char *argv[])
 {
