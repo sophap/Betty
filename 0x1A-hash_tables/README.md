@@ -1,1 +1,0 @@
-Hash tables readme file
