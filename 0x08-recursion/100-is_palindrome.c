@@ -17,7 +17,7 @@ int is_palindrome_recursive(char *s, int start, int end)
 	{
 		return (0);
 	}
-	return is_palindrome_recursive(s, start + 1, end - 1);
+	return (is_palindrome_recursive(s, start + 1, end - 1));
 }
 
 /**
@@ -31,5 +31,5 @@ int is_palindrome(char *s)
 
 	length = strlen(s);
 
-	return is_palindrome_recursive(s, 0, length - 1);
+	return (is_palindrome_recursive(s, 0, length - 1));
 }
